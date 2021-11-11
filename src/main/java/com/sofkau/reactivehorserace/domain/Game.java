@@ -1,16 +1,16 @@
-package com.sofkau.carrerasdecaballosreactiva.domain;
+package com.sofkau.reactivehorserace.domain;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Juego {
+public class Game {
     private final String id;
-    private Map<String, Jugador> gamers;
-    private Pista pista;
-    private Podio podio;
+    private Map<String, Gamer> gamers;
+    private Track track;
+    private Podium podium;
     private Boolean isActive;
 
-    public Juego(String id) {
+    public Game(String id) {
         this.id = id;
         this.gamers = new HashMap<>();
         isActive=false;
